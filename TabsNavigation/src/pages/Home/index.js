@@ -7,16 +7,16 @@ export default function Home() {
     // useNavigation -> objeto para navegar para outra tela
     const navigation = useNavigation();
 
-    function navegaSobre() {
+    function navegaDetalhes() {
       // envia como parametro 
-      navigation.navigate('Sobre')
+      navigation.navigate('Detalhes')
     }
     
 
     return (
       <View style={styles.container}>
         <Text>Tela HOME</Text>
-        <Button title='Ir para sobre' onPress={ navegaSobre } />
+        <Button title='Ir para detalhes' onPress={ navegaDetalhes } />
       </View>
     );
 }
